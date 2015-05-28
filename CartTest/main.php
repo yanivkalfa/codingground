@@ -21,41 +21,4 @@ echo '<br> total:'.$_SESSION['cart']->getTotal();
 echo '<pre>';
 print_r($_SESSION['cart']);
 echo '</pre>';
-
-/*
-
-unset($_SESSION['cart']);
-
-
-$products = [
-    [
-        'ID' => 5,
-        'cart_id' => 1,
-        'unique_store_id' => 250,
-        'store' => 'ebay',
-        'img' => '',
-        'title' => 'bekini',
-        'price' => 432,
-        'status' => ''
-    ],
-    [
-        'ID' => 5,
-        'cart_id' => 1,
-        'unique_store_id' => 153,
-        'store' => 'ebay',
-        'img' => '',
-        'title' => 'bycles',
-        'price' => 123,
-        'status' => ''
-    ]
-];
-
-$_SESSION['cart'] = new Cart(0, new Address(0), $products);
-
-
-echo '<br> total:'.$_SESSION['cart']->getTotal();
-echo '<pre>';
-print_r($_SESSION['cart']);
-echo '</pre>';
-*/
 ?>
